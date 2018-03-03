@@ -1,5 +1,6 @@
 <?php
 
+use b4djo\seo\models\SeoPage;
 use yii\helpers\Html;
 use yii\grid\GridView;
 
@@ -20,7 +21,20 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             //'id',
-            'route',
+            [
+                'attribute' => 'route',
+                'value' => function (SeoPage $data) {
+
+                    return Html::a(
+                        Html::encode($data->route),
+                        Yii::$app->urlManagerFrontend->baseUrl . $data->route,
+                        [
+                            'target' => '_blank',
+                        ]
+                    );
+                },
+                'format' => 'raw',
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
