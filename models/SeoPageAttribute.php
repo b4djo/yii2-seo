@@ -2,8 +2,6 @@
 
 namespace b4djo\seo\models;
 
-use Yii;
-
 /**
  * This is the model class for table "seo_page_attribute".
  *

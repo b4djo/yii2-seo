@@ -10,8 +10,13 @@
             "email": "robertob4djo@gmail.com"
         }
     ],
+    "minimum-stability": "stable",
     "require": {
-        "yiisoft/yii2": "*"
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "~2.0.0"
+    },
+    "extra": {
+        "bootstrap": "b4djo\\seo\\Bootstrap"
     },
     "autoload": {
         "psr-4": {

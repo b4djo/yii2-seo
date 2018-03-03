@@ -2,8 +2,6 @@
 
 namespace b4djo\seo\models;
 
-use Yii;
-
 /**
  * This is the model class for table "seo_attribute".
  *
@@ -14,17 +12,17 @@ use Yii;
  */
 class SeoAttribute extends \yii\db\ActiveRecord
 {
-    const TAG = 'tag';
-    const META = 'meta';
+    const TAG   = 'tag';
+    const META  = 'meta';
     
-    const TITLE = 'title';
-    const H1 = 'h1';
-    const META_DESCRIPTION = 'description';
-    const META_KEYWORDS = 'keywords';
+    const TITLE             = 'title';
+    const H1                = 'h1';
+    const META_DESCRIPTION  = 'description';
+    const META_KEYWORDS     = 'keywords';
     
     public static $types = [
-        self::TAG => 'tag',
-        self::META => 'meta'
+        self::TAG   => 'tag',
+        self::META  => 'meta'
     ];
     
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\modules\seo\controllers;
+namespace b4djo\seo\controllers;
 
 use yii\web\Controller;
 

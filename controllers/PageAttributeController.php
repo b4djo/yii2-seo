@@ -1,10 +1,9 @@
 <?php
 
-namespace backend\modules\seo\controllers;
+namespace b4djo\seo\controllers;
 
-use backend\modules\seo\models\SeoPage;
+use b4djo\seo\models\SeoPageAttribute;
 use Yii;
-use backend\modules\seo\models\SeoPageAttribute;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;

@@ -10,10 +10,10 @@ $this->title = 'Seo Attributes';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="seo-attribute-index">
-
     <p>
-        <?= Html::a('Create Seo Attribute', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('seo', 'Create Seo Attribute'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [

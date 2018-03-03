@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use backend\modules\seo\models\SeoAttribute;
+use badjo\seo\models\SeoAttribute;
 
 /* @var $this yii\web\View */
 /* @var $model backend\modules\seo\models\SeoAttribute */
