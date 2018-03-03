@@ -51,9 +51,9 @@ class SeoAttribute extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'type' => 'Type',
-            'description' => 'Description',
+            'name' => \Yii::t('seo', 'Name'),
+            'type' => \Yii::t('seo', 'Type'),
+            'description' => \Yii::t('seo', 'Description'),
         ];
     }
     

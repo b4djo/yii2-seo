@@ -48,6 +48,9 @@ class Seo extends Object
         // Remove city alias from URL
         if ($this->removeUrlPrefix) {
             $where['route'] = strstr(ltrim($where['route'], '/'), '/');
+            if (strlen($where['route']) == 0 || $where['route'] === false) { // If main page
+                $where['route'] = '/';
+            }
         }
 
         $this->_page = SeoPage::find()->where($where)->asArray()->with('seoAttributes.tagName')->one();

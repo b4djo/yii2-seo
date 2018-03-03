@@ -10,18 +10,16 @@ class Bootstrap implements BootstrapInterface
 {
     public function bootstrap($app)
     {
-        /*$app->getUrlManager()->addRules([
-            'test' => 'mytest/test/index',
-        ], false);*/
+        if ($app->hasModule('seo') && ($module = $app->getModule('seo')) instanceof Module) {
+            $app->setModule('seo', 'b4djo\seo\Module');
 
-        $app->setModule('seo', 'b4djo\seo\Module');
-
-        if (!isset($app->get('i18n')->translations['seo*'])) {
-            $app->get('i18n')->translations['seo*'] = [
-                'class' => PhpMessageSource::className(),
-                'basePath' => __DIR__ . '/messages',
-                'sourceLanguage' => 'en-US'
-            ];
+            if (!isset($app->get('i18n')->translations['seo*'])) {
+                $app->get('i18n')->translations['seo*'] = [
+                    'class' => PhpMessageSource::className(),
+                    'basePath' => __DIR__ . '/messages',
+                    'sourceLanguage' => 'en-US'
+                ];
+            }
         }
     }
 }

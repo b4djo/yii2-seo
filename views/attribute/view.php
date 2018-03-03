@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model backend\modules\seo\models\SeoAttribute */
+/* @var $model b4djo\seo\models\SeoAttribute */
 
 $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Seo Attributes', 'url' => ['index']];

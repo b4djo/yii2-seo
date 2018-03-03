@@ -1,11 +1,9 @@
 <?php
 
-use yii\helpers\Html;
-
 /* @var $this yii\web\View */
-/* @var $model backend\modules\seo\models\SeoAttribute */
+/* @var $model b4djo\seo\models\SeoAttribute */
 
-$this->title = 'Update Seo Attribute: ' . $model->name;
+$this->title = \Yii::t('seo', 'Update') . ': ' . $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Seo Attributes', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Update';

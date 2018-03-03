@@ -6,12 +6,12 @@ use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Seo Attributes';
+$this->title = Yii::t('seo', 'Attributes');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="seo-attribute-index">
     <p>
-        <?= Html::a(Yii::t('seo', 'Create Seo Attribute'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(\Yii::t('seo', 'Create seo attribute'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([

@@ -1,12 +1,9 @@
 <?php
 
-use yii\helpers\Html;
-
-
 /* @var $this yii\web\View */
-/* @var $model backend\modules\seo\models\SeoPage */
+/* @var $model b4djo\seo\models\SeoPage */
 
-$this->title = 'Create Seo Page';
+$this->title = \Yii::t('seo', 'Create');
 $this->params['breadcrumbs'][] = ['label' => 'Seo Pages', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
