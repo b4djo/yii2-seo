@@ -12,10 +12,15 @@ class m170301_090929_create_seo_page_table extends Migration
      */
     public function up()
     {
+        $tableOptions = null;
+        if ($this->db->driverName === 'mysql') {
+            $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
+        }
+
         $this->createTable('seo_page', [
             'id' => $this->primaryKey(),
             'route' =>$this->string()->notNull()->unique(),
-        ]);
+        ], $tableOptions);
     }
 
     /**

@@ -21,6 +21,11 @@ or add
 
 to the require section of your `composer.json` file.
 
+Migrations
+
+```
+yii migrate --migrationPath=@klisl/mytest/migrations --interactive=0
+```
 
 Usage
 -----
