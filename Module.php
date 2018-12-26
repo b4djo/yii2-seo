@@ -3,7 +3,7 @@
 namespace b4djo\seo;
 
 /**
- * seo module definition class
+ * Seo module definition class
  */
 class Module extends \yii\base\Module
 {
