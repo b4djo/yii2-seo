@@ -6,9 +6,9 @@ use b4djo\seo\models\SeoAttribute;
 use b4djo\seo\models\SeoPage;
 use b4djo\seo\traits\ModuleTrait;
 use Yii;
+use yii\base\BaseObject;
 use yii\helpers\ArrayHelper;
 use yii\web\Controller;
-use yii\base\Object;
 
 /**
  * Class Seo
@@ -16,7 +16,7 @@ use yii\base\Object;
  *
  * @property $removeUrlPrefix bool
  */
-class Seo extends Object
+class Seo extends BaseObject
 {
     use ModuleTrait;
 
